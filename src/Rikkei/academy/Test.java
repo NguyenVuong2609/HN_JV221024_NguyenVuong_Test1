@@ -29,7 +29,7 @@ public class Test {
                     System.out.println("Mời nhập số lượng phần tử muốn khai báo: ");
                     size = sc.nextInt();
                     int num;
-                    if (size > 0) {
+                    if (size > 0 && size < 100) {
                         for (int i = 0; i < size; i++) {
                             System.out.println("Nhập phần tử thứ " + (i + 1) + " :");
                             num = sc.nextInt();
@@ -167,6 +167,4 @@ public class Test {
             }
         } while (choice != 9);
     }
-
-
 }
